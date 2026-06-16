@@ -2426,7 +2426,7 @@ public:
                   const std::string &client_cert_path,
                   const std::string &client_key_path);
 
-  // HTTP only interface
+  // HTTP only interface 
   explicit Client(const std::string &host, int port);
 
   explicit Client(const std::string &host, int port,
