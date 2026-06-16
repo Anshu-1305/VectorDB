@@ -115,7 +115,7 @@ class KDTree {
         if (v.emb[ax] < n->item.emb[ax]) n->left  = ins(n->left,  v, d+1);
         else                              n->right = ins(n->right, v, d+1);
         return n;
-    }
+    } 
 
     void knn(KDNode* n, const std::vector<float>& q, int k, int d, DistFn dist,
              std::priority_queue<std::pair<float,int>>& heap)
